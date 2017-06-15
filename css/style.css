@@ -1,0 +1,320 @@
+@font-face {
+    font-family: 'Lovelo';
+    src: url('../font/Lovelo Line Light.otf');
+}
+
+@font-face {
+    font-family: 'Lovelo-black';
+    src: url('../font/Lovelo Line Bold.otf');
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    padding: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #222;
+    font-family: "Roboto", sans-serif;
+}
+
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10vh 100vw 0 0;
+    border-color: whitesmoke transparent transparent transparent;
+    margin-top: -2px;
+}
+
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 10vh 100vw;
+    border-color: transparent transparent whitesmoke transparent;
+    margin-top: -2px;
+}
+
+.separator {
+    height: 1px;
+    padding: 10px 0px 20px 300px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+
+/* ========================================
+   ================ NAVBAR ================
+   ======================================== */
+
+.nav [type=checkbox] {
+    display: none;
+}
+
+.list-none {
+    list-style: none;
+}
+
+.floating-li>li {
+    display: inline-block;
+}
+
+.hamburger {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    overflow: hidden;
+    padding: 0;
+    width: 96px;
+    height: 96px;
+    font-size: 0;
+    text-indent: -9999px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.hamburger span {
+    display: block;
+    position: absolute;
+    background: #ea694D;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition-timing-function: easen-in-out;
+    transition-duration: 0.4s;
+    transition-delay: 1200ms;
+    transition-property: width height transform;
+}
+
+.hamburger span::before,
+.hamburger span::after {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    width: 48px;
+    width: 18px;
+    height: 2px;
+    background-color: #fff;
+    content: "";
+    opacity: 0;
+    transform: translate(-50%, -50%) scaleX(0.1);
+    transition-property: opacity transform;
+    transition-duration: 0.4s, 0.4s;
+    transition-delay: 300ms;
+}
+
+[type=checkbox]:checked~label span {
+    width: 96px;
+    height: 96px;
+    transition-delay: 0ms;
+}
+
+[type=checkbox]:checked~label span::before {
+    transform: translate(-50%, -50%) rotate(45deg) scaleX(1);
+}
+
+[type=checkbox]:checked~label span::after {
+    transform: translate(-50%, -50%) rotate(-45deg) scaleX(1);
+}
+
+[type=checkbox]:checked~label span::before,
+[type=checkbox]:checked~label span::after {
+    opacity: 1;
+    transition-delay: 1500ms;
+}
+
+.menu {
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: #ea694D;
+    position: relative;
+    margin: 0;
+    padding: 0 96px;
+    border-radius: 48px;
+    transform-origin: calc(100vw - 48px) 48px;
+    transform: scale(0);
+    transition-property: height transform border-radius;
+    transition-delay: 980ms;
+    transition-duration: 0.34s;
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    font-family: 'Slurm Regular';
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.menu li {
+    min-height: 36px;
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    opacity: 0;
+    transition: opacity 0.8s 500ms;
+}
+
+.menu li a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (min-height: 26rem) {
+    .menu li:first-child {
+        margin-top: 300px;
+    }
+}
+
+@media screen and (min-height: 26rem) {
+    .menu li:last-child {
+        margin-bottom: 300px;
+    }
+}
+
+[type=checkbox]:checked~label~.menu {
+    height: 100vh;
+    border-radius: 0;
+    transform: scale(1);
+    transition-property: height transform border-radius;
+    transition-delay: 50ms;
+    transition-duration: 0.4s;
+}
+
+[type=checkbox]:checked~label~.menu li {
+    opacity: 1;
+    transition-delay: 600ms;
+}
+
+.content {
+    position: relative;
+    margin-top: 96px;
+    padding: 2em 1em;
+}
+
+
+/* ========================================
+   ================ HEADER ================
+   ======================================== */
+
+header {
+    background-color: whitesmoke;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-family: "Lovelo-black";
+    font-size: 12em;
+    text-align: center;
+}
+
+header h2 {
+    text-align: center;
+    font-size: 2.7em;
+    margin-top: 0;
+    color: #ea694d;
+}
+
+.line {
+    height: 2px;
+    width: 100%;
+    background-color: #222;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.triangle-head {
+    width: 0px;
+    height: 0;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 40px 37.5px 0 37.5px;
+    border-color: #222 transparent transparent transparent;
+}
+
+
+/* ========================================
+   ============= PRESENTATION =============
+   ======================================== */
+
+.presentation {
+    /*height: 90vh;*/
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.presentation h3 {
+    color: whitesmoke;
+}
+
+#logo {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 75px;
+    margin-bottom: 30px;
+}
+
+.present {
+    margin: 100px 0px 100px 0px;
+}
+
+.icons-present {
+    margin: 100px 0px 100px 0px;
+}
+
+.icons-present:hover {
+    transform: scale(1.1);
+}
+
+.icons-present img {
+    width: 150px;
+}
+
+.icons-present p {
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.5em;
+    color: whitesmoke;
+    padding: 20px 0px 20px 0px;
+}
+
+
+/* ========================================
+   ============== RESPONSIVE ==============
+   ======================================== */
+
+@media (max-width: 980px) {
+    header {
+        height: 50vh;
+    }
+    .icons-present p {
+        font-size: 35px;
+    }
+}
