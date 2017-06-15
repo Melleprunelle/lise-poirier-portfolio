@@ -49,6 +49,13 @@ body {
     border-bottom: 1px solid whitesmoke;
 }
 
+.separator-grey {
+    height: 1px;
+    padding: 10px 0px 20px 300px;
+    border-bottom: 1px solid #222;
+    margin: 0 auto;
+}
+
 
 /* ========================================
    ================ NAVBAR ================
@@ -301,36 +308,39 @@ header h2 {
 }
 
 
-
-
 /* ========================================
    ============= PRESENTATION =============
    ======================================== */
+
 .presentation {
     /*height: 90vh;*/
-    
     background-color: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .presentation h3 {
     color: whitesmoke;
 }
+
 #logo {
     width: 200px;
     margin: 0 auto;
     margin-top: 75px;
     margin-bottom: 30px;
 }
+
 .present {
     margin: 100px 0px 100px 0px;
 }
+
 .icons-present {
     margin: 100px 0px 100px 0px;
     color: whitesmoke;
 }
+
 .icons-present:hover {
     -webkit-animation-name: tadaa;
     animation-name: tadaa;
@@ -339,18 +349,17 @@ header h2 {
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
+
 @-webkit-keyframes tadaa {
     0% {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
     }
-    
     10%,
     20% {
         -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
         transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
     }
-    
     30%,
     50%,
     70%,
@@ -358,31 +367,28 @@ header h2 {
         -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
         transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
     }
-    
     40%,
     60%,
     80% {
         -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
         transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
     }
-    
     100% {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
     }
 }
+
 @keyframes tadaa {
     0% {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
     }
-    
     10%,
     20% {
         -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
         transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
     }
-    
     30%,
     50%,
     70%,
@@ -390,22 +396,22 @@ header h2 {
         -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
         transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
     }
-    
     40%,
     60%,
     80% {
         -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
         transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
     }
-    
     100% {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
     }
 }
+
 .icons-present img {
     width: 150px;
 }
+
 .icons-present p {
     max-width: 80%;
     text-align: center;
@@ -414,22 +420,64 @@ header h2 {
     padding: 20px 0px 20px 0px;
 }
 
+
 /* ========================================
    ============== COMPETENCE ==============
    ======================================== */
+
 .competence {
-    height: 50vh;
     background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.competence h3 {
+    text-align: center;
+    color: #222;
+    margin: 75px 0px 10px 0px;
+}
+
+.competence article {
+    margin: 75px 0px 75px 0px;
+}
+
+.comp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-3deg);
+}
+
+.comp img {
+    width: 100px;
+    margin: 20px 0px 20px 0px;
+}
+
+.comp p {
+    padding: 5px 0px 5px 5px;
+    margin: 0;
+    text-align: right
+}
+
+.progression {
+    border-bottom: 1px solid #222;
+}
+
+.progression p {
+    font-size: 1.5em;
+    font-weight: 600;
 }
 
 /* ========================================
    ============== RESPONSIVE ==============
    ======================================== */
+
 @media (max-width: 980px) {
     header {
         height: 50vh;
     }
-    
     .icons-present p {
         font-size: 35px;
     }
