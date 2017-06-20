@@ -41,6 +41,7 @@ body {
     border-width: 0 0 10vh 100vw;
     border-color: transparent transparent whitesmoke transparent;
     margin-top: -2px;
+    margin-bottom: -2px;
 }
 
 .separator {
@@ -541,6 +542,7 @@ div.contenu-comp {
 
 .contenu-comp p {
     width: 100%;
+    font-size: 1.4em;
     padding: 40px 30px 30px 10px;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -608,5 +610,8 @@ div.contenu-comp {
         width: 90%;
         font-size: 3em;
         padding-left: 50px;
+    }
+    .presentation h3, .competence h3 {
+        font-size: 2.3em;
     }
 }
