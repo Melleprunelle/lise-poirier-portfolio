@@ -25,6 +25,10 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+[class*="col-"]{
+    padding: 0px;
+}
+
 .triangle-right {
     width: 0;
     height: 0;
@@ -328,13 +332,12 @@ header h2 {
 
 #logo {
     width: 200px;
-    margin: 0 auto;
     margin-top: 75px;
     margin-bottom: 30px;
 }
 
 .present {
-    margin: 100px 0px 100px 0px;
+    margin: 50px 0px 50px 0px;
 }
 
 .icons-present {
@@ -441,7 +444,8 @@ header h2 {
 }
 
 .competence article {
-    margin: 50px 0px 50px 0px;
+    margin: 50px 0px 100px 0px;
+    margin: 50px 0px 100px 0px;
     padding: 0;
 }
 
@@ -586,6 +590,58 @@ div.contenu-comp {
 }
 
 
+/* ========================================
+   ============== CAT ==============
+   ======================================== */
+
+.paralax-container {
+    background-color: #222;
+    height: 175px;
+}
+.cat {
+	background-image: url('../img/chat.svg');
+	background-position: center;
+	background-size: contain;
+	width: 500px;
+	height: 200px;
+	display: block;
+	background-repeat: no-repeat;
+}
+
+
+/* ========================================
+   ============== CAT ==============
+   ======================================== */
+
+.portfolio {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio h3 {
+     margin: 75px 0px 10px 0px;
+}
+
+.article-portfolio {
+    height: 60px;
+    background-color: red;
+}
+
+#palette {
+    width: 150px;
+    margin-top: 75px;
+    margin-bottom: 30px;
+}
+
+.cach-portfolio {
+    display: none;
+}
+
+
+
 
 /* ========================================
    ============== RESPONSIVE ==============
@@ -613,5 +669,8 @@ div.contenu-comp {
     }
     .presentation h3, .competence h3 {
         font-size: 2.3em;
+    }
+    #display  {
+        display: none;
     }
 }
