@@ -25,7 +25,7 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-[class*="col-"]{
+[class*="col-"] {
     padding: 0px;
 }
 
@@ -443,7 +443,8 @@ header h2 {
     margin: 75px 0px 10px 0px;
 }
 
-.competence article {
+.competence article,
+.competence section {
     margin: 50px 0px 100px 0px;
     margin: 50px 0px 100px 0px;
     padding: 0;
@@ -598,19 +599,20 @@ div.contenu-comp {
     background-color: #222;
     height: 175px;
 }
+
 .cat {
-	background-image: url('../img/chat.svg');
-	background-position: center;
-	background-size: contain;
-	width: 500px;
-	height: 200px;
-	display: block;
-	background-repeat: no-repeat;
+    background-image: url('../img/chat.svg');
+    background-position: center;
+    background-size: contain;
+    width: 500px;
+    height: 200px;
+    display: block;
+    background-repeat: no-repeat;
 }
 
 
 /* ========================================
-   ============== CAT ==============
+   ============== PORTFOLIO ===============
    ======================================== */
 
 .portfolio {
@@ -622,7 +624,7 @@ div.contenu-comp {
 }
 
 .portfolio h3 {
-     margin: 75px 0px 10px 0px;
+    margin: 75px 0px 10px 0px;
 }
 
 .article-portfolio {
@@ -640,7 +642,59 @@ div.contenu-comp {
     display: none;
 }
 
+#bowling {
+    background-image: url(../img/projets/bowling.png);
+    background-position: top;
+    height: 500px;
+    background-size: cover;
+}
 
+.projects {
+    background-color: #222;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    opacity: 0;
+}
+
+.projects:hover {
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.projects div {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+}
+
+.projects h4 {
+    text-align: center;
+    color: whitesmoke;
+    font-family: "Lovelo-black";
+    font-size: 3.8em;
+    padding: 0 20px;
+}
+
+.projects p {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0px 60px 5vh 60px;
+}
+
+.projects button {
+    width: 100%;
+    height: 100px;
+    background-color: #ea694d;
+    border: 0;
+    color: whitesmoke;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
 
 
 /* ========================================
@@ -667,10 +721,14 @@ div.contenu-comp {
         font-size: 3em;
         padding-left: 50px;
     }
-    .presentation h3, .competence h3 {
+    .presentation h3,
+    .competence h3 {
         font-size: 2.3em;
     }
-    #display  {
+    #display {
         display: none;
+    }
+    .portfolio {
+        margin-top: -2px;
     }
 }
