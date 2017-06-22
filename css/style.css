@@ -904,9 +904,37 @@ textarea {
    ======================================== */
 
 footer {
-    height: 200px;
     background-color: whitesmoke;
 }
+
+footer img {
+    width: 250px;
+    margin-bottom: -30px;
+    transform: rotateY(180deg);
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div:last-child {
+    background-color: #ea694d;
+}
+
+footer i {
+    margin-top: 100px;
+    color: #ea694d;
+    padding: 10px;
+}
+
+footer p {
+    padding: 20px;
+    color: whitesmoke;
+    font-size: 1.5em;
+}
+
 
 /* ========================================
    ============== RESPONSIVE ==============
@@ -944,24 +972,18 @@ footer {
     }
     .voir-plus {
         width: 50vw;
-        height: 100px;
-        font-size: 5em;
-        color: #fff;
-        text-transform: uppercase;
-        text-align: center;
-        cursor: pointer;
-        border: none;
-        background-color: #ea694d;
-        box-shadow: inset 0px 1px 0px #ea694d, 0px 5px 0px 0px #222, 0px 10px 5px #999;
-        border-radius: 0%;
-        -webkit-animation: bounce 2.5s infinite;
-        animation: bounce 2.5s infinite;
-        margin-bottom: 75px;
     }
     .section-contact p {
         font-size: 3em;
     }
     .section-contact a {
         font-size: 1.5em;
+    }
+    footer img {
+        margin-bottom: -75px;
+        transform: rotateY(180deg);
+    }
+    footer i {
+        margin-top: 100px;
     }
 }
