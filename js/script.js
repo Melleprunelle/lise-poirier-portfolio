@@ -12,3 +12,20 @@ $('.cat').on('inview', function (event, isInView) {
         })
     }
 });
+
+//affichage projet
+$(document).ready(function () {
+    $('#button-plus').click(function () {
+        var button=this
+        $('#projet-2').slideToggle(500, function () {
+            if ($('#projet-2').is(':visible')) {
+                $("span", button).text("-");
+            } else {
+                $("span", button).text("+");
+            }
+        });
+    });
+});
+
+
+
