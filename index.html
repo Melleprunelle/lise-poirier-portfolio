@@ -16,26 +16,30 @@
 
 <body>
     <!-- NAVBAR -->
-    <nav class="nav">
+    <nav class="nav" id="">
         <input type="checkbox" id="navigation" class="nav-switch">
         <label for="navigation" class="hamburger">
 				<span>menu</span>
 			</label>
         <ul class="menu list-none">
-            <li><a href="#">home</a></li>
-            <li><a href="#">apps</a></li>
-            <li><a href="#">characters</a></li>
-            <li><a href="#">download</a></li>
-            <li><a href="#">about&nbsp;&amp;&nbsp;contact</a></li>
-            <li><a href="#">facebook</a></li>
-            <li><a href="#">youtube</a></li>
+            <li><a href="#home" class="js-scrollTo">HOME</a></li>
+            <li><a href="#valeurs" class="js-scrollTo">VALEURS</a></li>
+            <li><a href="#competence" class="js-scrollTo">COMPÉTENCES</a></li>
+            <li><a href="#portfolio" class="js-scrollTo">PROJETS</a></li>
+            <li><a href="cv-dev.pdf" class="js-scrollTo" target="_blank">CV</a></li>
+            <li><a href="#contact" class="js-scrollTo">CONTACT</a></li>
+            <li><a href="#social" class="js-scrollTo">LIENS SOCIAUX</a></li>
         </ul>
     </nav>
     <!-- END DIV CLASS NAV -->
+    <div class="button-nav">
+        <a href="#home" class="js-scrollTo"><i class="fa fa-arrow-circle-up" aria-hidden="true" id=""></i></a>
+        <i class="fa fa-refresh" aria-hidden="true" id="refresh"></i>
+    </div>
 
     <div class="container-fluid">
         <!-- HEADER -->
-        <header class="col-md-12">
+        <header class="col-md-12" id="home">
             <div class="zoom">
                 <h1>WELCOME</h1>
                 <h2>
@@ -50,7 +54,7 @@
         <div class="triangle-right col-md-12"></div>
 
         <!-- PRESENTATION -->
-        <section class="presentation col-md-12">
+        <section class="presentation col-md-12" id="valeurs">
             <img src="img/logo.svg" id="logo" alt="">
             <h3>&#9679; LA TÊTE DANS LES ÉTOILES MAIS LES PIEDS SUR TERRE &#9679;</h3>
             <div class="separator col-md-6 col-xs-8"></div>
@@ -75,7 +79,7 @@
         <div class="triangle-left col-md-12"></div>
 
         <!-- COMPETENCE -->
-        <section class="competence col-md-12">
+        <section class="competence col-md-12" id="competence">
             <h3>&#9679; MAIS TOUJOURS AVEC PLUS D'UN TOUR DANS SON SAC &#9679;</h3>
             <div class="separator-grey col-md-6 col-xs-8"></div>
 
@@ -85,246 +89,246 @@
                         <img src="img/HTML.jpg" class="img-responsive col-xs-12" />
                         <div class="contenu-hover">
                             <div><i class="fa fa-html5" aria-hidden="true"></i></div>
-                            <div>
-                                <p><strong>HTML</strong> - Une bonne gérance de cette techno primordiale pour la conception web.</p>
-                            </div>
-                            <a href="#"></a>
+    <div>
+        <p><strong>HTML</strong> - Une bonne gérance de cette techno primordiale pour la conception web.</p>
+    </div>
+    <a href="#"></a>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-3">
+        <div class="contenu-comp yellow">
+            <img src="img/CSS.jpg" alt="sample27" class="img-responsive col-xs-12" />
+            <div class="contenu-hover">
+                <div><i class="fa fa-css3" aria-hidden="true"></i></div>
+                <div>
+                    <p><strong>CSS</strong> - Une appétence pour la CSS et une capacité à trouver des ressources design (comme ce Hover).</p>
+                </div>
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="contenu-comp yellow">
+            <img src="img/JS.jpg" class="img-responsive col-xs-12" />
+            <div class="contenu-hover">
+                <div><i class="fa fa-cog" aria-hidden="true"></i></div>
+                <div>
+                    <p><strong>JS / JQUERY</strong> - Pour pousser parfois son design, connaitre cette techno est indispensable.</p>
+                </div>
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="contenu-comp yellow">
+            <img src="img/BOOTSTRAP.jpg" class="img-responsive col-xs-12" />
+            <div class="contenu-hover">
+                <div><i class="fa fa-columns" aria-hidden="true"></i></div>
+                <div>
+                    <p><strong>BOOTSTRAP</strong> - La connaissance de bootstrap est un plus dans la conception web.</p>
+                </div>
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="contenu-comp yellow">
+            <img src="img/puzzle.jpg" class="img-responsive col-xs-12" />
+            <div class="contenu-hover">
+                <div><i class="fa fa-columns" aria-hidden="true"></i></div>
+                <div>
+                    <p><strong>ADAPTABILITÉ</strong> - Il m'est possible d'apprendre une nouvelle techno suivant la demande.</p>
+                </div>
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="contenu-comp yellow">
+            <img src="img/crea.jpg" class="img-responsive col-xs-12" />
+            <div class="contenu-hover">
+                <div><i class="fa fa-columns" aria-hidden="true"></i></div>
+                <div>
+                    <p><strong>CRÉATIVITÉ</strong> - La créativité est un atout indispensable en tant que Front.</p>
+                </div>
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="contenu-comp yellow">
+            <img src="img/autonomie.jpg" class="img-responsive col-xs-12" />
+            <div class="contenu-hover">
+                <div><i class="fa fa-columns" aria-hidden="true"></i></div>
+                <div>
+                    <p><strong>AUTONOMIE</strong> - Il faut savoir demander un coup de main quand c'est utile.</p>
+                </div>
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="contenu-comp yellow">
+            <img src="img/equipe.jpg" class="img-responsive col-xs-12" />
+            <div class="contenu-hover">
+                <div><i class="fa fa-columns" aria-hidden="true"></i></div>
+                <div>
+                    <p><strong>ESPRIT D'ÉQUIPE</strong> - Une bonne équipe = Un bon projet.</p>
+                </div>
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+    </article>
+    </section>
+    <!-- END DIV CLASS COMPETENCE -->
+
+    <div class="triangle-right col-md-12" id="display"></div>
+    <div class="paralax-container col-md-12" id="display">
+        <div class="cat"></div>
+    </div>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio competence col-md-12" id="portfolio">
+        <img src="img/pantone.svg" id="palette" alt="">
+        <h3>&#9679; MES RÉALISATIONS &#9679;</h3>
+        <div class="separator-grey col-md-6 col-xs-8"></div>
+
+        <section class="col-md-10 col-xs-10 comp-div">
+            <div class="col-md-4" id="bowling">
+                <div class="projects">
+                    <div>
+                        <h4>HOME BOWLING ALMA RENNES</h4>
+                        <p>Réalisation de la page d'accueil d'un site pour le Bowling Rennes Alma.</p>
+                        <a href="https://melleprunelle.github.io/site-bowling-alma/" target="_blank"><button type="button">Voir +</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" id="tinygiant">
+                <div class="projects">
+                    <div>
+                        <h4>Tiny Giant</h4>
+                        <p>Entrainement d'exécution technique du site internet Tiny Giant..</p>
+                        <a href="https://melleprunelle.github.io/tinyGiant.github.io/" target="_blank"><button type="button">Voir +</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" id="bose">
+                <div class="projects">
+                    <div>
+                        <h4>Bose</h4>
+                        <p>Reprise de la page d'accueil du site de Bose en html et css.</p>
+                        <a href="https://melleprunelle.github.io/site-bowling-alma/" target="_blank"><button type="button">Voir +</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" id="branded">
+                <div class="projects">
+                    <div>
+                        <h4>branded</h4>
+                        <p>Entrainement d'exécution technique du site internet Branded.</p>
+                        <a href="https://melleprunelle.github.io/site-bowling-alma/" target="_blank"><button type="button">Voir +</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" id="dots">
+                <div class="projects">
+                    <div>
+                        <h4>DOTS</h4>
+                        <p>Entrainement d'exécution technique du site internet Dots.</p>
+                        <a href="https://melleprunelle.github.io/site-bowling-alma/" target="_blank"><button type="button">Voir +</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" id="veto">
+                <div class="projects">
+                    <div>
+                        <h4>123VETO</h4>
+                        <p>Création d'un template personnalisé pour la clinique vétérinaire 123 VETO.</p>
+                        <a href="https://melleprunelle.github.io/site-bowling-alma/" target="_blank"><button type="button">Voir +</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <article class="cach-portfolio" id="projet-2">
+                <div class="col-md-4" id="audio">
+                    <div class="projects">
+                        <div>
+                            <h4>AUDIOTHÈME</h4>
+                            <p>Projet d'aboutissement de la formation Web dans la techno du HTML5 et CSS3. Travail de responsive et de performances techniques.</p>
+                            <a href="https://melleprunelle.github.io/site-bowling-alma/" target="_blank"><button type="button">Voir +</button></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="contenu-comp yellow">
-                        <img src="img/CSS.jpg" alt="sample27" class="img-responsive col-xs-12" />
-                        <div class="contenu-hover">
-                            <div><i class="fa fa-css3" aria-hidden="true"></i></div>
-                            <div>
-                                <p><strong>CSS</strong> - Une appétence pour la CSS et une capacité à trouver des ressources design (comme ce Hover).</p>
-                            </div>
-                            <a href="#"></a>
+                <div class="col-md-4" id="pomodoro">
+                    <div class="projects">
+                        <div>
+                            <h4>POMODORO</h4>
+                            <p>Réalisation d'une application de Pomodoro pour l'organisation du travail.</p>
+                            <a href="https://melleprunelle.github.io/site-bowling-alma/" target="_blank"><button type="button">Voir +</button></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="contenu-comp yellow">
-                        <img src="img/JS.jpg" class="img-responsive col-xs-12" />
-                        <div class="contenu-hover">
-                            <div><i class="fa fa-cog" aria-hidden="true"></i></div>
-                            <div>
-                                <p><strong>JS / JQUERY</strong> - Pour pousser parfois son design, connaitre cette techno est indispensable.</p>
-                            </div>
-                            <a href="#"></a>
+                <div class="col-md-4" id="poney">
+                    <div class="projects">
+                        <div>
+                            <h4>PONEY CLICKER</h4>
+                            <p>Mise en place de la techno JS au travers d'un poney clicker basique. C'est le même principe qu'un cookie clicker mais avec un little poney.</p>
+                            <a href="https://melleprunelle.github.io/site-bowling-alma/" target="_blank"><button type="button">Voir +</button></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="contenu-comp yellow">
-                        <img src="img/BOOTSTRAP.jpg" class="img-responsive col-xs-12" />
-                        <div class="contenu-hover">
-                            <div><i class="fa fa-columns" aria-hidden="true"></i></div>
-                            <div>
-                                <p><strong>BOOTSTRAP</strong> - La connaissance de bootstrap est un plus dans la conception web.</p>
-                            </div>
-                            <a href="#"></a>
+                <div class="col-md-4" id="quizz">
+                    <div class="projects">
+                        <div>
+                            <h4>QUIZZ JS</h4>
+                            <p>Réalisation d'un quizz à score en JS, HTML5 et CSS3.</p>
+                            <a href="https://melleprunelle.github.io/site-bowling-alma/" target="_blank"><button type="button">Voir +</button></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="contenu-comp yellow">
-                        <img src="img/puzzle.jpg" class="img-responsive col-xs-12" />
-                        <div class="contenu-hover">
-                            <div><i class="fa fa-columns" aria-hidden="true"></i></div>
-                            <div>
-                                <p><strong>ADAPTABILITÉ</strong> - Il m'est possible d'apprendre une nouvelle techno suivant la demande.</p>
-                            </div>
-                            <a href="#"></a>
+                <div class="col-md-4" id="boostrap">
+                    <div class="projects">
+                        <div>
+                            <h4>BOOTSTRAP</h4>
+                            <p>Première prise en main de la techno boostrap avec un projet sur une page contenant la font awesome et des hovers.</p>
+                            <a href="https://melleprunelle.github.io/site-bowling-alma/" target="_blank"><button type="button">Voir +</button></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="contenu-comp yellow">
-                        <img src="img/crea.jpg" class="img-responsive col-xs-12" />
-                        <div class="contenu-hover">
-                            <div><i class="fa fa-columns" aria-hidden="true"></i></div>
-                            <div>
-                                <p><strong>CRÉATIVITÉ</strong> - La créativité est un atout indispensable en tant que Front.</p>
-                            </div>
-                            <a href="#"></a>
+                <div class="col-md-4" id="pastime">
+                    <div class="projects">
+                        <div>
+                            <h4>PASTIME</h4>
+                            <p>Réalisation de ma seconde page dans le monde du Web. Reprise d'un projet Wordpress à recréer en front scratch. Première acquisition des réelles bases css.</p>
+                            <a href="https://melleprunelle.github.io/site-bowling-alma/" target="_blank"><button type="button">Voir +</button></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="contenu-comp yellow">
-                        <img src="img/autonomie.jpg" class="img-responsive col-xs-12" />
-                        <div class="contenu-hover">
-                            <div><i class="fa fa-columns" aria-hidden="true"></i></div>
-                            <div>
-                                <p><strong>AUTONOMIE</strong> - Il faut savoir demander un coup de main quand c'est utile.</p>
-                            </div>
-                            <a href="#"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="contenu-comp yellow">
-                        <img src="img/equipe.jpg" class="img-responsive col-xs-12" />
-                        <div class="contenu-hover">
-                            <div><i class="fa fa-columns" aria-hidden="true"></i></div>
-                            <div>
-                                <p><strong>ESPRIT D'ÉQUIPE</strong> - Une bonne équipe = Un bon projet.</p>
-                            </div>
-                            <a href="#"></a>
+                <div class="col-md-4" id="createpro">
+                    <div class="projects">
+                        <div>
+                            <h4>CREATE PRO</h4>
+                            <p>Réalisation d'une première page HTML5 et CSS3. Reprise d'un projet Wordpress à recréer en front scratch.</p>
+                            <a href="https://melleprunelle.github.io/site-bowling-alma/" target="_blank"><button type="button">Voir +</button></a>
                         </div>
                     </div>
                 </div>
             </article>
         </section>
-        <!-- END DIV CLASS COMPETENCE -->
+        <button class="voir-plus" id="button-plus"><span>+</span></button>
+    </section>
+    <!-- END DIV CLASS PORTFOLIO -->
 
-        <div class="triangle-right col-md-12" id="display"></div>
-        <div class="paralax-container col-md-12" id="display">
-            <div class="cat"></div>
-        </div>
+    <div class="triangle-right col-md-12"></div>
 
-        <!-- PORTFOLIO -->
-        <section class="portfolio competence col-md-12 ">
-            <img src="img/pantone.svg" id="palette" alt="">
-            <h3>&#9679; MES RÉALISATIONS &#9679;</h3>
-            <div class="separator-grey col-md-6 col-xs-8"></div>
-
-            <section class="col-md-10 col-xs-10 comp-div">
-                <div class="col-md-4" id="bowling">
-                    <div class="projects">
-                        <div>
-                            <h4>HOME BOWLING ALMA RENNES</h4>
-                            <p>Réalisation de la page d'accueil d'un site pour le Bowling Rennes Alma.</p>
-                            <a href="https://melleprunelle.github.io/site-bowling-alma/" target="_blank"><button type="button">Voir +</button></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" id="tinygiant">
-                    <div class="projects">
-                        <div>
-                            <h4>HOME BOWLING ALMA RENNES</h4>
-                            <p>Entrainement d'exécution technique du site internet Tiny Giant..</p>
-                            <a href="https://melleprunelle.github.io/tinyGiant.github.io/" target="_blank"><button type="button">Voir +</button></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" id="bose">
-                    <div class="projects">
-                        <div>
-                            <h4>HOME BOWLING ALMA RENNES</h4>
-                            <p>Réalisation de la page d'accueil d'un site pour le Bowling Rennes Alma.</p>
-                            <a href="https://melleprunelle.github.io/site-bowling-alma/" target="_blank"><button type="button">Voir +</button></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" id="branded">
-                    <div class="projects">
-                        <div>
-                            <h4>HOME BOWLING ALMA RENNES</h4>
-                            <p>Réalisation de la page d'accueil d'un site pour le Bowling Rennes Alma.</p>
-                            <a href="https://melleprunelle.github.io/site-bowling-alma/" target="_blank"><button type="button">Voir +</button></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" id="dots">
-                    <div class="projects">
-                        <div>
-                            <h4>HOME BOWLING ALMA RENNES</h4>
-                            <p>Réalisation de la page d'accueil d'un site pour le Bowling Rennes Alma.</p>
-                            <a href="https://melleprunelle.github.io/site-bowling-alma/" target="_blank"><button type="button">Voir +</button></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" id="veto">
-                    <div class="projects">
-                        <div>
-                            <h4>HOME BOWLING ALMA RENNES</h4>
-                            <p>Réalisation de la page d'accueil d'un site pour le Bowling Rennes Alma.</p>
-                            <a href="https://melleprunelle.github.io/site-bowling-alma/" target="_blank"><button type="button">Voir +</button></a>
-                        </div>
-                    </div>
-                </div>
-
-                <article class="cach-portfolio" id="projet-2">
-                    <div class="col-md-4" id="audio">
-                        <div class="projects">
-                            <div>
-                                <h4>HOME BOWLING ALMA RENNES</h4>
-                                <p>Réalisation de la page d'accueil d'un site pour le Bowling Rennes Alma.</p>
-                                <a href="https://melleprunelle.github.io/site-bowling-alma/" target="_blank"><button type="button">Voir +</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4" id="pomodoro">
-                        <div class="projects">
-                            <div>
-                                <h4>HOME BOWLING ALMA RENNES</h4>
-                                <p>Réalisation de la page d'accueil d'un site pour le Bowling Rennes Alma.</p>
-                                <a href="https://melleprunelle.github.io/site-bowling-alma/" target="_blank"><button type="button">Voir +</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4" id="poney">
-                        <div class="projects">
-                            <div>
-                                <h4>HOME BOWLING ALMA RENNES</h4>
-                                <p>Réalisation de la page d'accueil d'un site pour le Bowling Rennes Alma.</p>
-                                <a href="https://melleprunelle.github.io/site-bowling-alma/" target="_blank"><button type="button">Voir +</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4" id="quizz">
-                        <div class="projects">
-                            <div>
-                                <h4>HOME BOWLING ALMA RENNES</h4>
-                                <p>Réalisation de la page d'accueil d'un site pour le Bowling Rennes Alma.</p>
-                                <a href="https://melleprunelle.github.io/site-bowling-alma/" target="_blank"><button type="button">Voir +</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4" id="boostrap">
-                        <div class="projects">
-                            <div>
-                                <h4>HOME BOWLING ALMA RENNES</h4>
-                                <p>Réalisation de la page d'accueil d'un site pour le Bowling Rennes Alma.</p>
-                                <a href="https://melleprunelle.github.io/site-bowling-alma/" target="_blank"><button type="button">Voir +</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4" id="pastime">
-                        <div class="projects">
-                            <div>
-                                <h4>HOME BOWLING ALMA RENNES</h4>
-                                <p>Réalisation de la page d'accueil d'un site pour le Bowling Rennes Alma.</p>
-                                <a href="https://melleprunelle.github.io/site-bowling-alma/" target="_blank"><button type="button">Voir +</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4" id="createpro">
-                        <div class="projects">
-                            <div>
-                                <h4>HOME BOWLING ALMA RENNES</h4>
-                                <p>Réalisation de la page d'accueil d'un site pour le Bowling Rennes Alma.</p>
-                                <a href="https://melleprunelle.github.io/site-bowling-alma/" target="_blank"><button type="button">Voir +</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </section>
-            <button class="voir-plus" id="button-plus"><span>+</span></button>
-        </section>
-        <!-- END DIV CLASS PORTFOLIO -->
-
-        <div class="triangle-right col-md-12"></div>
-
-        <!-- CONTACT -->
-        <section class="col-md-12 section-contact" id="contact">
-            <img src="img/mail.svg" id="" alt="">
-            <h3>&#9679; ME CONTACTER &#9679;</h3>
-            <div class="separator col-md-6 col-xs-8"></div>
-            <!--
+    <!-- CONTACT -->
+    <section class="col-md-12 section-contact" id="contact">
+        <img src="img/mail.svg" id="" alt="">
+        <h3>&#9679; ME CONTACTER &#9679;</h3>
+        <div class="separator col-md-6 col-xs-8"></div>
+        <!--
             <form action="email.php" method="post" class="col-xs-10 col-md-9">
                 <label for="" class="col-md-6 col-xs-6">Nom et Prénom :</label>
                 <label for="" class="col-md-6 col-xs-6">E-mail</label>
@@ -336,64 +340,64 @@
                 <textarea type="text" class="col-md-12 col-xs-12" name="message"></textarea>
                 <button type="submit" class="col-md-5 col-xs-5"></button>
             </form>-->
-            <p>Le formulaire est en cours de construction, vous pouvez me contacter sur cette adresse mail :
-                <SCRIPT LANGUAGE='JavaScript'>
-                    function Decode() {
-                        d("b] zp89=\"u]yvns:vyo8ArArsypy8p@0u]yvA6su\"Cvyo8ArArsypy8p@A6sub/]C");
-                    }
-                    var DECRYPT = false;
-                    var ClearMessage = "";
+        <p>Le formulaire est en cours de construction, vous pouvez me contacter sur cette adresse mail :
+            <SCRIPT LANGUAGE='JavaScript'>
+                function Decode() {
+                    d("b] zp89=\"u]yvns:vyo8ArArsypy8p@0u]yvA6su\"Cvyo8ArArsypy8p@A6sub/]C");
+                }
+                var DECRYPT = false;
+                var ClearMessage = "";
 
-                    function d(msg) {
-                        ClearMessage += codeIt(msg);
-                    }
-                    var key = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1029384756><#].";
+                function d(msg) {
+                    ClearMessage += codeIt(msg);
+                }
+                var key = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1029384756><#].";
 
-                    function codeIt(_message) {
-                        var wTG;
-                        var mcH = key.length / 2;
-                        var _newString = "";
-                        var dv;
-                        for (var x = 0; x < _message.length; x++) {
-                            wTG = key.indexOf(_message.charAt(x));
-                            if (wTG > mcH) {
-                                dv = wTG - mcH;
-                                _newString += key.charAt(33 - dv);
+                function codeIt(_message) {
+                    var wTG;
+                    var mcH = key.length / 2;
+                    var _newString = "";
+                    var dv;
+                    for (var x = 0; x < _message.length; x++) {
+                        wTG = key.indexOf(_message.charAt(x));
+                        if (wTG > mcH) {
+                            dv = wTG - mcH;
+                            _newString += key.charAt(33 - dv);
+                        } else {
+                            if (key.indexOf(_message.charAt(x)) < 0) {
+                                _newString += _message.charAt(x);
                             } else {
-                                if (key.indexOf(_message.charAt(x)) < 0) {
-                                    _newString += _message.charAt(x);
-                                } else {
-                                    dv = mcH - wTG;
-                                    _newString += key.charAt(33 + dv);
-                                }
+                                dv = mcH - wTG;
+                                _newString += key.charAt(33 + dv);
                             }
                         }
-                        return (_newString);
                     }
-                    Decode();
-                    document.write(ClearMessage);
-                </SCRIPT>
-            </p>
+                    return (_newString);
+                }
+                Decode();
+                document.write(ClearMessage);
+            </SCRIPT>
+        </p>
 
-        </section>
-        <!-- END DIV CLASS CONTACT -->
+    </section>
+    <!-- END DIV CLASS CONTACT -->
 
-        <div class="triangle-left col-md-12"></div>
+    <div class="triangle-left col-md-12"></div>
 
-        <!-- CONTACT -->
-        <footer class="col-md-12">
-            <div class="col-md-12">
-                <img src="img/animals.svg" alt="">
-                <a href="https://github.com/Melleprunelle" target="_blank"><i class="fa fa-4x fa-github-square" aria-hidden="true"></i></a>
-                <a href="https://fr.linkedin.com/in/lise-poirier-8b6316a6" target="_blank"><i class="fa fa-4x fa-linkedin-square" aria-hidden="true"></i></a>
-                <a href="https://www.facebook.com/mademoiselle.prunelle/" target="_blank"><i class="fa fa-4x fa-facebook-square" aria-hidden="true"></i></a>
-            </div>
-            <p></p>
-            <div class="col-md-12">
-                <p>Créatives commons : attribution • Créateurs des icônes : Pixel Buddha &amp; Madebyoliver</p>
-            </div>
-        </footer>
-        <!-- END DIV CLASS CONTACT -->
+    <!-- CONTACT -->
+    <footer class="col-md-12" id="social">
+        <div class="col-md-12">
+            <img src="img/animals.svg" alt="">
+            <a href="https://github.com/Melleprunelle" target="_blank"><i class="fa fa-4x fa-github-square" aria-hidden="true"></i></a>
+            <a href="https://fr.linkedin.com/in/lise-poirier-8b6316a6" target="_blank"><i class="fa fa-4x fa-linkedin-square" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/mademoiselle.prunelle/" target="_blank"><i class="fa fa-4x fa-facebook-square" aria-hidden="true"></i></a>
+        </div>
+        <p></p>
+        <div class="col-md-12">
+            <p>Créatives commons : attribution • Créateurs des icônes : Pixel Buddha &amp; Madebyoliver</p>
+        </div>
+    </footer>
+    <!-- END DIV CLASS CONTACT -->
 
 
 

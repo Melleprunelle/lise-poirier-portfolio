@@ -61,6 +61,21 @@ body {
     margin: 0 auto;
 }
 
+.button-nav {
+    position: fixed;
+    z-index: 9999;
+    font-size: 3em;
+}
+.button-nav a {text-decoration: none;
+}
+.button-nav i {
+display: block;
+    color: #999;
+    margin: 20px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
 
 /* ========================================
    ================ NAVBAR ================
@@ -189,6 +204,8 @@ body {
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color: inherit;
+    font-size: 2em;
+    font-weight: 600;
 }
 
 @media screen and (min-height: 26rem) {
@@ -927,6 +944,10 @@ footer i {
     margin-top: 100px;
     color: #ea694d;
     padding: 10px;
+}
+
+footer i:hover {
+    color: #222;
 }
 
 footer p {

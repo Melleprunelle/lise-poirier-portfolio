@@ -1,3 +1,8 @@
+//REFRESH PAGE
+$('#refresh').on('click', function () {
+    location.reload();
+});
+
 //CAT
 $('.cat').on('inview', function (event, isInView) {
     if (isInView) {
@@ -27,5 +32,12 @@ $(document).ready(function () {
     });
 });
 
-
-
+//Scroll fluid pour l'ancre
+$(document).ready(function() {
+		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+			var page = $(this).attr('href'); // Page cible
+			var speed = 750; // Durée de l'animation (en ms)
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			return false;
+		});
+	});
