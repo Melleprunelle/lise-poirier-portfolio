@@ -211,7 +211,6 @@ body {
 @media screen and (min-height: 26rem) {
 	.menu li:first-child {
 		margin-top: 200px;
-		background-color: mediumslateblue;
 	}
 }
 
