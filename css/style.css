@@ -960,6 +960,9 @@ footer p {
 	header {
 		height: 50vh;
 	}
+	.menu li a {
+			font-size: 1.5em;
+	}
 	.icons-present p {
 		font-size: 35px;
 	}
