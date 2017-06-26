@@ -185,17 +185,15 @@ body {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: stretch;
 	align-content: stretch;
-	font-family: 'Slurm Regular';
 	font-size: 1.75rem;
 	font-weight: 100;
 }
 
 .menu li {
 	min-height: 36px;
-	flex-grow: 2;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -213,7 +211,7 @@ body {
 @media screen and (min-height: 26rem) {
 	.menu li:first-child {
 		margin-top: 200px;
-		background-color: crimson;
+		background-color: mediumslateblue;
 	}
 }
 
